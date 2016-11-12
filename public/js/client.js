@@ -37,7 +37,7 @@ $(document).ready(function(){
     });
   });
 
-  $("#result").on('click', function(event) {
+  $("#clear").on('click', function(event) {
     $("#firstNum").empty;
     $("#secondNum").empty;
     $("#result").empty;
