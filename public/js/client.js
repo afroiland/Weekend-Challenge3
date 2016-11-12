@@ -35,9 +35,11 @@ $(document).ready(function(){
         console.log('The "/calculator" ajax post request failed with error: ', error);
       }
     });
-
   });
 
-
-
+  $("#result").on('click', function(event) {
+    $("#calculator").empty;
+    $("#result").empty;
+  });
+  
 });
