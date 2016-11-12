@@ -8,15 +8,19 @@
   </head>
   <body>
     <h1>Calculator</h1>
-    <form id="catForm">
-      <label for="catName">Cat Name:</label>
-      <input type="text" id="catName" name="catName" />
+    <form id="calculator">
+      <label for="firstNum">First Number:</label>
+      <input type="number" id="firstNum" name="firstNum" />
 
-      <label for="temperment">Temperment:</label>
-      <input type="text" id="temperment" name="temperment" />
+      <label for="secodnNum">Second Number:</label>
+      <input type="number" id="secondNum" name="secondNum" />
 
-      <input type="submit" value="Add Cat" />
+      <button type="submit" class="operator" id="add" >Add</button>
+      <button type="submit" class="operator" id="subtract" >Subtract</button>
+      <button type="submit" class="operator" id="multiply" >Multiply</button>
+      <button type="submit" class="operator" id="divide" >Divide</button>
+      <button id="clear">Clear</button>
     </form>
-    <section id="catBox"></section>
+    <section id="result"></section>
   </body>
 </html>

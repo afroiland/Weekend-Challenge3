@@ -9,7 +9,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 
 
-app.get('/calculator', calculator);
+app.use('/calculator', calculator);
 
 app.use('/', index);
 
