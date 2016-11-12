@@ -8,8 +8,6 @@ $(document).ready(function(){
     var fields = $('#calculator').serializeArray();
     fields.forEach(function(element, index, array) {
       numbers[element.name] = element.value;
-      //numbers[element.operator] = oper]
-      //
     });
     numbers.operator = this.getAttribute("id");
     console.log(numbers);
@@ -26,16 +24,17 @@ $(document).ready(function(){
       }
     });
 
-    // $.ajax({
-    //   type: 'GET',
-    //   url: '/calculator',
-    //   success: function(){
-    //     console.log("success");
-    //   },
-    //   error: function(error){
-    //     console.log('The "/calculator" ajax post request failed with error: ', error);
-    //   }
-    // });
+    $.ajax({
+      type: 'GET',
+      url: '/calculator',
+      success: function(data){
+        console.log("success");
+        $("#result").text(data);
+      },
+      error: function(error){
+        console.log('The "/calculator" ajax post request failed with error: ', error);
+      }
+    });
 
   });
 

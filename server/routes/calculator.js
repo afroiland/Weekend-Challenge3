@@ -8,14 +8,19 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 router.post('/', function(req, res){
   obj = req.body;
-  console.log(obj);
+//  console.log(obj);
   res.sendStatus(201);
 });
 
-// router.get('/', function(req, res){
-//   calculate(obj)
-//   res.send();
-// });
+router.get('/', function(req, res){
+  var answer = tempCalc(obj.firstNum, obj.secondNum, obj.operator);
+  res.send(answer);
+  console.log(answer);
+});
+
+function tempCalc(num1, num2, operator){
+  return (num1+num2);
+}
 
 function calculate (number1, number2, operator){
   if (operator === add){
