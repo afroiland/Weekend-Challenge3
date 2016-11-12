@@ -38,8 +38,9 @@ $(document).ready(function(){
   });
 
   $("#result").on('click', function(event) {
-    $("#calculator").empty;
+    $("#firstNum").empty;
+    $("#secondNum").empty;
     $("#result").empty;
   });
-  
+
 });
