@@ -36,20 +36,20 @@ function whichOperation (num1, num2, operator){
   }
 }
 
+module.exports = router;
+
 // function tempCalc(num1, num2, operator){
 //   return (num1+num2);
 // }
 
-function calculate (number1, number2, operator){
-  if (operator === add){
-    return number1+number2;
-  } else if (operator === subtract){
-    return number1-number2;
-  } else if (operator === multiply){
-    return number1*number2;
-  } else if (operator === divide){
-    return number1/number2;
-  }
-}
-
-module.exports = router;
+// function calculate (number1, number2, operator){
+//   if (operator === add){
+//     return number1+number2;
+//   } else if (operator === subtract){
+//     return number1-number2;
+//   } else if (operator === multiply){
+//     return number1*number2;
+//   } else if (operator === divide){
+//     return number1/number2;
+//   }
+// }
